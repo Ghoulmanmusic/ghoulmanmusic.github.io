@@ -1,113 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ghoul Man | Official Artist</title>
-<meta name="description" content="Official website for Ghoul Man, independent recording artist.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghoul Man | Official Artist Website</title>
+<meta name="description" content="Ghoul Man is an artist creating dark, emotionally driven music blending darkwave, gothic rock, post-punk, grunge, and experimental sounds.">
+<meta name="theme-color" content="#100d14">
 <style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: #080808;
-    color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 28px 18px;
-  }
-  .page {
-    width: 100%;
-    max-width: 720px;
-    text-align: center;
-    border: 1px solid #2b2b2b;
-    background: #101010;
-    padding: 56px 28px;
-    box-shadow: 0 0 40px rgba(0,0,0,.65);
-  }
-  .mark {
-    width: 92px;
-    height: 92px;
-    margin: 0 auto 24px;
-    border: 1px solid #555;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 36px;
-    font-weight: 900;
-    letter-spacing: -3px;
-  }
-  h1 {
-    margin: 0;
-    font-size: clamp(42px, 10vw, 76px);
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
-  .subtitle {
-    margin: 12px 0 34px;
-    color: #aaa;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 13px;
-  }
-  .bio {
-    max-width: 570px;
-    margin: 0 auto 34px;
-    line-height: 1.7;
-    color: #d0d0d0;
-    font-size: 16px;
-  }
-  .contact {
-    border-top: 1px solid #2b2b2b;
-    padding-top: 25px;
-  }
-  .contact-label {
-    color: #777;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 9px;
-  }
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-  a:hover { text-decoration: underline; }
-  .email { font-size: 17px; }
-  .legal {
-    margin-top: 38px;
-    color: #555;
-    font-size: 11px;
-  }
+:root{color-scheme:dark;--bg:#100d14;--ink:#f0e8df;--muted:#b7aabd;--line:#44374c;--accent:#c6a0e1}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 70% 10%,#35233e55,transparent 45%),var(--bg);color:var(--ink);font:17px/1.7 system-ui,sans-serif}a{color:inherit}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}header{position:sticky;top:0;z-index:2;background:#100d14f5;border-bottom:1px solid var(--line)}nav{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 24px}.brand{font:bold 24px Georgia,serif;text-decoration:none}nav .links{display:flex;gap:24px;font-size:14px}nav .links a{text-decoration:none;color:var(--muted)}nav .links a:hover{color:var(--ink)}main{max-width:1120px;margin:auto;padding:0 24px}.hero{min-height:660px;display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:50px;padding:80px 0}.eyebrow{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent)}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.1;font-weight:normal}h1{font-size:clamp(60px,9vw,116px);margin:22px 0;letter-spacing:-.04em}h2{font-size:clamp(36px,5vw,58px);margin:12px 0 32px}h3{font-size:30px;margin:0 0 16px}p{color:var(--muted);max-width:680px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;padding:12px 22px;border:1px solid var(--line);text-decoration:none;font-size:14px}.button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}.button:hover{border-color:var(--accent)}.sigil{height:390px;position:relative;display:grid;place-items:center;background:radial-gradient(ellipse,#68437944,transparent 65%);border:1px solid var(--line);border-radius:50% 50% 0 0}.sigil:before{content:'';position:absolute;height:210px;width:2px;background:var(--accent);top:65px}.sigil:after{content:'';position:absolute;width:140px;height:2px;background:var(--accent);top:130px}.sigil span{z-index:1;font:64px Georgia,serif;background:var(--bg);padding:10px 16px;margin-top:90px}.section{padding:72px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px;border:1px solid var(--line);background:#21182755}.card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}.cover{aspect-ratio:1;display:grid;place-items:center;text-align:center;border:1px solid #715481;background:radial-gradient(ellipse at top,#513159,#19121f 70%);padding:24px}.cover small{letter-spacing:.3em;color:var(--accent)}.cover strong{display:block;font:clamp(40px,6vw,74px) Georgia,serif;margin:18px 0}.cover span{font-size:11px;letter-spacing:.2em}.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px}.quote{font:italic 30px/1.5 Georgia,serif;color:var(--ink);border-left:1px solid var(--accent);padding-left:24px}.socials{display:flex;flex-wrap:wrap;gap:12px}.empty{font-size:14px;color:var(--muted)}footer{max-width:1120px;margin:auto;padding:32px 24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:10;background:var(--bg);padding:12px}iframe{width:100%;aspect-ratio:16/9;border:0}img{max-width:100%;display:block}.cover img{width:100%;height:100%;object-fit:cover} @media(max-width:720px){nav{flex-wrap:wrap;gap:8px;padding:12px 20px}nav .links{gap:20px;flex-wrap:wrap}main{padding:0 20px}.hero{grid-template-columns:1fr;gap:30px;padding:50px 0;min-height:auto}.sigil{height:310px;max-width:350px;width:100%;margin:auto}.sigil:before{height:170px;top:35px}.sigil:after{top:100px}.grid,.card.featured,.bio{grid-template-columns:1fr}.card.featured{gap:28px}.card{padding:22px}.bio{gap:16px}.section{padding:50px 0}footer{flex-direction:column}.cover{max-width:400px;width:100%;margin:auto}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-  <main class="page">
-    <div class="mark">GM</div>
-    <h1>Ghoul Man</h1>
-    <div class="subtitle">Independent Recording Artist</div>
-
-    <p class="bio">
-      Ghoul Man is the artist project of Ja'Von Deyon, creating dark,
-      emotionally driven music blending elements of darkwave, gothic rock,
-      post-punk, grunge, and experimental sounds.
-    </p>
-
-    <section class="contact">
-      <div class="contact-label">Artist / Contact</div>
-      <div><strong>Ja'Von Deyon</strong></div>
-      <div class="email">
-        <a href="mailto:javondeyon621@gmail.com">javondeyon621@gmail.com</a>
-      </div>
-    </section>
-
-    <div class="legal">
-      © 2026 Ghoul Man. All rights reserved.
-    </div>
-  </main>
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a class="brand" href="#home">Ghoul Man †</a><div class="links"><a href="#music">Music</a><a href="#bio">Bio</a><a href="#videos">Videos</a><a href="#social">Social</a></div></nav></header>
+<main id="main">
+<section class="hero" id="home"><div><div class="eyebrow">Independent recording artist</div><h1>Ghoul<br>Man</h1><p>Ghoul Man is an artist creating dark, emotionally driven music blending elements of darkwave, gothic rock, post-punk, grunge, and experimental sounds.</p><div class="buttons"><a class="button primary" href="#music">Explore the music</a><a class="button" href="#bio">The story behind the ghoul</a></div></div><div class="sigil" aria-hidden="true"><span>GM</span></div></section>
+<section class="section" id="music"><div class="eyebrow">01 / Music</div><h2>Sound from the shadows.</h2><article class="card featured"><div class="cover" id="ep-cover" aria-label="Episodes typographic artwork"><div><small>GHOUL MAN</small><strong>Episodes</strong><span>POST-PUNK / CLOUD RAP</span></div></div><div><div class="eyebrow">Featured project</div><h3>Episodes</h3><p>From the restless pulse of post-punk to the haze of cloud rap, <em>Episodes</em> moves through loneliness, betrayal, vulnerability, and the pressure to become a better version of yourself.</p><div id="music-links" class="buttons"></div></div></article><div class="grid" style="margin-top:20px"><article class="card"><div class="eyebrow">From Episodes</div><h3>First Time Alone</h3><p>Upbeat post-punk rhythms meet the weight of loneliness. A vulnerable look at sleepless nights and learning to stand on your own.</p></article><article class="card"><div class="eyebrow">From Episodes</div><h3>Funny to Me</h3><p>Finding confidence while others doubt the journey—and growing because people depend on you.</p></article><article class="card"><div class="eyebrow">From Episodes</div><h3>Run Away</h3><p>A confrontation with the parts of yourself you keep beneath the surface, and the cost of wanting to be seen.</p></article></div></section>
+<section class="section bio" id="bio"><div><div class="eyebrow">02 / Bio</div><h2>The story behind<br>the ghoul.</h2><div class="quote">“Prepare for war,<br>but pray for peace.”</div></div><div><p>Raised by a single mother of four, Ghoul Man grew up moving between Palestine and Houston. His mother made sure the family had what they needed, but the constant moves made lasting connections difficult. Isolation came early; gaming became an escape.</p><p>Music found him there. Hearing Adema’s “Immortal” through Mortal Kombat sparked a love for nu metal and opened the door to other sounds. His first lyrics went into a black notebook his mother gave him in fourth grade. Sharing them would take more time.</p><p>After years of being judged for his interests, he learned to embrace his individuality. Today, his music follows that same instinct: moving through darkwave, gothic rock, post-punk, grunge, and cloud rap with an honest voice.</p><p>Ghoul Man turns loneliness, faith, betrayal, love, and personal growth into songs that let the vulnerable parts speak.</p></div></section>
+<section class="section" id="videos"><div class="eyebrow">03 / Videos</div><h2>Step into the world.</h2><div id="video-content" class="card"><h3>Visuals &amp; videos</h3><p>Music videos, visualizers, and moments behind the music.</p></div></section>
+<section class="section" id="social"><div class="eyebrow">04 / Social</div><h2>Stay connected.</h2><p>Follow the music, the process, and what comes next.</p><div class="socials" id="social-links"></div><p>For collaborations, interviews, and business inquiries:<br><a href="mailto:javondeyon621@gmail.com">javondeyon621@gmail.com</a></p></section>
+</main><footer><span>© <span id="year">2026</span> Ghoul Man</span><span>Independent sound. An honest voice.</span></footer>
+<script>
+// PERSONALIZE HERE: paste your exact profile/release URLs between the quotes.
+// Leave unused entries empty. Empty links are never displayed.
+const SITE = {
+  spotify: '', // Spotify artist or Episodes release URL
+  soundcloud: '',
+  youtube: '', // Your channel URL
+  instagram: '',
+  tiktok: '',
+  videoUrl: '', // A YouTube video URL; opens in YouTube (no tracking embed)
+  videoTitle: 'Watch the latest visual',
+  coverImage: '' // Optional: 'episodes.jpg' after uploading that file beside index.html
+};
+function validUrl(value){try{const u=new URL(value);return u.protocol==='https:'?u.href:null}catch{return null}}
+function addLink(container,label,url){const safe=validUrl(url);if(!safe)return;const a=document.createElement('a');a.className='button';a.textContent=label;a.href=safe;a.target='_blank';a.rel='noopener noreferrer';container.append(a)}
+const music=document.getElementById('music-links');addLink(music,'Listen on Spotify',SITE.spotify);addLink(music,'Listen on SoundCloud',SITE.soundcloud);
+if(!music.children.length){const p=document.createElement('p');p.className='empty';p.textContent='Streaming links coming soon.';music.append(p)}
+const social=document.getElementById('social-links');for(const [key,label] of [['spotify','Spotify'],['youtube','YouTube'],['instagram','Instagram'],['tiktok','TikTok'],['soundcloud','SoundCloud']])addLink(social,label,SITE[key]);
+if(!social.children.length){const p=document.createElement('p');p.className='empty';p.textContent='Social links coming soon.';social.append(p)}
+const videos=document.getElementById('video-content');addLink(videos,SITE.videoTitle,SITE.videoUrl);if(!validUrl(SITE.videoUrl))addLink(videos,'Visit YouTube',SITE.youtube);
+if(!validUrl(SITE.videoUrl)&&!validUrl(SITE.youtube)){const p=document.createElement('p');p.className='empty';p.textContent='New visuals coming soon.';videos.append(p)}
+if(SITE.coverImage && /^(?!.*\.\.)[a-zA-Z0-9_./-]+\.(jpg|jpeg|png|webp)$/i.test(SITE.coverImage)){const image=new Image();image.alt='Episodes — Ghoul Man cover artwork';image.onload=()=>{const cover=document.getElementById('ep-cover');cover.replaceChildren(image);cover.style.padding='0'};image.src=SITE.coverImage}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
